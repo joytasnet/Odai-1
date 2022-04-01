@@ -10,5 +10,10 @@
 import java.util.*;
 public class Q004{
 	public static void main(String[] args){
+		System.out.print("秒を入力>>");
+		long ans = new Scanner(System.in).nextInt();
+		int hour = ;
+		int minute= :;
+		int second= ans
 	}
 }

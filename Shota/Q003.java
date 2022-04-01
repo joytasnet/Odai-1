@@ -13,13 +13,18 @@
 import java.util.*;
 public class Q003{
 	public static void main(String[] args){
-		System.out.pirnt("整数1を入力");
+		System.out.print("整数1を入力");
 		int number1=new Scanner(System.in).nextInt();
-		System.out.pirnt("整数2を入力");
+		System.out.print("整数2を入力");
 		int number2=new Scanner(System.in).nextInt();
-		System.out.pirnt("整数3を入力");
+		System.out.print("整数3を入力");
 		int number3=new Scanner(System.in).nextInt();
 
-		System.out.print("最も大きい整数%dと%n
+			int max = Math.max(number1,Math.max(number2,number3));
+			int min = Math.min(number1,Math.min(number2,number3));
+			int ans =max-min;
+
+
+		System.out.printf("最も大きい整数%d%n最も小さい整数%dの差は%dです。",max,min,ans);
 	}
 }
