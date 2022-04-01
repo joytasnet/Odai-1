@@ -12,5 +12,12 @@
 import java.util.*;
 public class Q001{
 	public static void main(String[] args){
+		int a,b;
+		System.out.print("整数1>>");
+		a=new Scanner(System.in).nextInt();
+		System.out.print("整数2>>");
+		b=new Scanner(System.in).nextInt();
+		int sum=a+b;
+		System.out.printf("%dと%dの合計は%dです.",a,b,sum);
 	}
 }
