@@ -18,5 +18,13 @@
 import java.util.*;
 public class Q006{
 	public static void main(String[] args){
+		System.out.print("先頭の整数を入力>>");
+		int fir = new Scanner(System.in).nextInt();
+		System.out.print("末尾の整数を入力>>");
+		int las = new Scanner(System.in).nextInt();
+		for(int i =fir;i<=las;i++){
+			System.out.print(i+" ");
+		}
+		System.out.println();
 	}
 }

@@ -14,5 +14,18 @@
 import java.util.*;
 public class Q013{
 	public static void main(String[] args){
+		System.out.print("今日の年は？>>");
+		int nY = new Scanner(System.in).nextInt();
+		System.out.print("今日の月は？>>");
+		int nMD = new Scanner(System.in).nextInt()*100;
+		System.out.print("今日の日は？>>");
+		nMD += new Scanner(System.in).nextInt();
+		System.out.print("誕生日の年は？>>");
+		int bY = new Scanner(System.in).nextInt();
+		System.out.print("誕生日の月は？>>");
+		int bMD = new Scanner(System.in).nextInt()*100;
+		System.out.print("誕生日の日は？>>");
+		bMD += new Scanner(System.in).nextInt();
+		System.out.printf("あなたの年齢は%d歳です。%n",(nMD>=bMD?nY-bY:nY-bY-1));
 	}
 }

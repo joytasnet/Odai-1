@@ -16,5 +16,13 @@ char[] data=fruits.toCharArray(); //[a, p, p, l, e]
 import java.util.*;
 public class Q017{
 	public static void main(String[] args){
+		System.out.print("文字列>>");
+		String word = new Scanner(System.in).nextLine();
+		char[] data = word.toCharArray();
+		String wordRev = "";
+		for(int i =0;i<data.length;i++){
+			wordRev += data[data.length-1-i];
+		}
+		System.out.printf("[%s]は回文%s。%n",word,(word.equals(wordRev))?"です":"ではありません");
 	}
 }

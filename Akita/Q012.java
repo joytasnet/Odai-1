@@ -10,5 +10,11 @@
 import java.util.*;
 public class Q012{
 	public static void main(String[] args){
+		System.out.print("正の整数を入力>>");
+		int n = new Scanner(System.in).nextInt();
+		for(int i =1;i<=n;i++){
+			System.out.print((i%2==0 || i%3==0)?i+" ":"");
+		}
+		System.out.println();
 	}
 }
