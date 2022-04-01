@@ -35,6 +35,7 @@ public class Q009{
 					}
 				}
 			}
+			System.out.printf("%dです.",sum);
 		}else if(select == 1){
 			if(num1 < num2){
 				System.out.printf("%dから%dまでの奇数の合計は",num1,num2);
@@ -51,9 +52,9 @@ public class Q009{
 					}
 				}
 			}
+			System.out.printf("%dです.",sum);
 		}else{
 			System.out.println("偶数か奇数を選んで下さい。");
 		}
-		System.out.printf("%dです.",sum);
 	}
 }
