@@ -13,5 +13,13 @@
 import java.util.*;
 public class Q003{
 	public static void main(String[] args){
+		System.out.pirnt("整数1を入力");
+		int number1=new Scanner(System.in).nextInt();
+		System.out.pirnt("整数2を入力");
+		int number2=new Scanner(System.in).nextInt();
+		System.out.pirnt("整数3を入力");
+		int number3=new Scanner(System.in).nextInt();
+
+		System.out.print("最も大きい整数%dと%n
 	}
 }
