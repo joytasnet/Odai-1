@@ -13,5 +13,18 @@
 import java.util.*;
 public class Q003{
 	public static void main(String[] args){
+		int[] nums = new int[3];
+		int max = 0;
+		int min = 0;
+		for(int i=1;i<=nums.length;i++){
+			System.out.printf("整数%dを入力 >>",i);
+			int num = new Scanner(System.in).nextInt();
+			if(max < num){
+				max = num;
+			}else{
+				min = num;
+			}
+		}
+		System.out.printf("最も大きい整数%dと%n最も小さい整数%dの差は%dです。",max,min,max - min);
 	}
 }
