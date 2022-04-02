@@ -16,5 +16,23 @@ char[] data=fruits.toCharArray(); //[a, p, p, l, e]
 import java.util.*;
 public class Q017{
 	public static void main(String[] args){
+		System.out.print("文字列>>");
+		String name = new Scanner(System.in).nextLine();
+		char[] data = name.toCharArray();
+		boolean isCirculer = true;
+		for(int i=0;i <= data.length/2;i++){
+			if(data[i] == data[data.length-1-i]){
+				isCirculer = true;
+			}else{
+				isCirculer = false;
+				break;
+			}
+		}
+		System.out.printf("[%s]は回文",name);
+		if(isCirculer){
+			System.out.println("です。");
+		}else{
+			System.out.println("ではありません。");
+		}
 	}
 }
