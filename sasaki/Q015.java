@@ -11,5 +11,13 @@
 import java.util.*;
 public class Q015{
 	public static void main(String[] args){
+		System.out.print("正の整数>>");
+		int num = new Scanner(System.in).nextInt();
+		if(num > 0){
+			String s = String.valueOf(num);
+			System.out.printf("%d桁の整数です。%n",s.length());
+		}else{
+			System.out.println("正の整数を入力してください。");
+		}
 	}
 }
