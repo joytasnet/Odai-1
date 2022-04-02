@@ -18,5 +18,21 @@
 import java.util.*;
 public class Q006{
 	public static void main(String[] args){
+		System.out.print("先頭の整数を入力>");
+		int num1 = new Scanner(System.in).nextInt();
+		System.out.print("末尾の整数を入力>");
+		int num2 = new Scanner(System.in).nextInt();
+		if(num1<num2){
+			do{
+				System.out.print(num1++ +" ");
+			}while(num1<=num2);
+		}else if(num1==num2){
+			System.out.print(num1);
+		}else if(num1>num2){
+			do{
+				System.out.print(num1-- +" ");
+			}while(num1>=num2);
+		}
+
 	}
 }
