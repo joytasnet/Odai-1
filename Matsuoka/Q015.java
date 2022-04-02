@@ -11,5 +11,9 @@
 import java.util.*;
 public class Q015{
 	public static void main(String[] args){
+		String num;
+		System.out.print("正の整数>>");
+		num=new Scanner(System.in).nextLine();
+		System.out.printf("%d桁の整数です",num.length());
 	}
 }

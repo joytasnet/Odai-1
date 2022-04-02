@@ -10,5 +10,13 @@
 import java.util.*;
 public class Q004{
 	public static void main(String[] args){
+		int time;
+		int hourTime,minTime;
+		System.out.print("秒を入力");
+		time=new Scanner(System.in).nextInt();
+		hourTime=time/3600;
+		minTime=time/60;
+		time-=minTime*60;
+		System.out.printf("%d時間%02d分%02d秒です。",hourTime,minTime,time);
 	}
 }

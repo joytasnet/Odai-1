@@ -9,5 +9,13 @@
 import java.util.*;
 public class Q011{
 	public static void main(String[] args){
+		int num;
+		System.out.print("整数を入力>>");
+		num=new Scanner(System.in).nextInt();
+		if(num<=10&&num>=0){
+			System.out.printf("%dは0以上10以下です。%n",num);
+		}else{
+			System.out.printf("%dは0以上10以下じゃないです。%n",num);
+		}
 	}
 }

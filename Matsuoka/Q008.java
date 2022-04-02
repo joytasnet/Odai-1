@@ -12,5 +12,19 @@
 import java.util.*;
 public class Q008{
 	public static void main(String[] args){
+		int num1,num2;
+		System.out.print("整数Aを入力>>");
+		num1=new Scanner(System.in).nextInt();
+		System.out.print("整数Bを入力>>");
+		num2=new Scanner(System.in).nextInt();
+		int min,max;
+		min=Math.min(num1,num2);
+		max=Math.max(num1,num2);
+		for(int i=min;i<=max;i++){
+			if(i%2==0){
+				System.out.printf("%d ",i);
+			}
+		}
+		System.out.println();
 	}
 }

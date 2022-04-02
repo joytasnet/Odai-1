@@ -8,5 +8,9 @@
 import java.util.*;
 public class Q016{
 	public static void main(String[] args){
+		System.out.printf("金額を入力>>");
+		long money=new Scanner(System.in).nextInt();
+		money=(money/100)*100;
+		System.out.printf("約%d円です%n",money);
 	}
 }
