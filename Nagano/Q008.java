@@ -12,5 +12,24 @@
 import java.util.*;
 public class Q008{
 	public static void main(String[] args){
+		System.out.print("整数Aを入力>");
+		int numA=new Scanner(System.in).nextInt();
+		System.out.print("整数Bを入力>");
+		int numB=new Scanner(System.in).nextInt();
+		for(int i = numA;i<=numB;i++){
+			if(numA<numB){
+				if(i%2==0){
+				System.out.print(i + " ");
+				}
+			}				
+		}
+		for(int i = numB;i<=numA;i++){
+			if(numA>numB){
+				if(i%2==0){
+				System.out.print(i + " ");
+				}
+			}				
+		}
+
 	}
 }
