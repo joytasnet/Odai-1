@@ -25,8 +25,7 @@ public class Q020{
 			}
 			System.out.println(names[i]);
 			if(i == names.length-2){
-				i++;
-				System.out.println(names[i]);
+				System.out.println(names[i+1]);
 			}
 		}
 	}
