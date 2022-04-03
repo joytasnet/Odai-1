@@ -12,5 +12,58 @@
 import java.util.*;
 public class Q009{
 	public static void main(String[] args){
+		System.out.print("整数1を入力>>");
+		int numberA= new Scanner(System.in).nextInt();
+		System.out.print("整数2を入力>>");
+		int numberB= new Scanner(System.in).nextInt();
+		System.out.print("偶数(0) 奇数(1)を選択>>");
+		int choise= new Scanner(System.in).nextInt();
+
+
+		int sum=0;
+		if(choise==0){
+			if(numberA>numberB){
+				for(int i=numberB;i<numberA+1;i++){
+					if(i%2==0){
+						sum+=i;
+						System.out.print(i+" ");
+					}else{
+						continue;
+					}
+				}
+			}
+			if(numberA<numberB){
+				for(int i=numberA;i<numberB+1;i++){
+					if(i%2==0){
+						sum+=i;
+						System.out.print(i+" ");
+					}else{
+						continue;
+					}
+				}
+			}
+		}
+		if(choise==1){
+			if(numberA>numberB){
+				for(int i=numberB;i<numberA+1;i++){
+					if(i%2!=0){
+						sum+=i;
+						System.out.print(i+" ");
+					}else{
+						continue;
+					}
+				}
+			}
+			if(numberA<numberB){
+				for(int i=numberA;i<numberB+1;i++){
+					if(i%2!=0){
+						sum+=i;
+						System.out.print(i+" ");
+					}else{
+						continue;
+					}
+				}
+			}
+		}
 	}
 }

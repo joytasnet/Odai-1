@@ -17,17 +17,18 @@ public class Q008{
 		System.out.print("整数Bを入力>>");
 		int numberB=new Scanner(System.in).nextInt();
 
-		int i=1;
-		if(numberA<numberB && i%2==0){
-			for(i=numberA; i<numberB+1;i++){
+		if(numberA>numberB){
+			for(int i=numberB; i<numberA+1;i++){
+				if(i%2 ==0){
 				System.out.print(i+" ");
-			}
-		}else if(numberA>numberB && i%2==0){
-			for(i=numberB; i<numberA+1;i++){
-				System.out.print(i+" ");
+				}
 			}
 		}else{
-			continue;
+			for(int i=numberA; i<numberB+1;i++){
+				if(i%2 == 0){
+				System.out.print(i+" ");
+				}
+			}	
 		}
 	}
 }
