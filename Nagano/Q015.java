@@ -11,5 +11,9 @@
 import java.util.*;
 public class Q015{
 	public static void main(String[] args){
+		System.out.print("正の整数>");
+		String num =new Scanner(System.in).next();
+		char[] nums=num.toCharArray();
+		System.out.println(nums.length +"桁の整数です");
 	}
 }
