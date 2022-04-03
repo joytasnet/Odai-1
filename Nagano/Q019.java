@@ -9,5 +9,19 @@
 import java.util.*;
 public class Q019{
 	public static void main(String[] args){
+		System.out.print("数値をカンマ区切りで入力>>");
+		String num =new Scanner(System.in).nextLine();
+		int max =0;
+		int min =0;
+		String[] data=num.split(",");
+		for(int i =0;i<data.length;i++){
+			int n = Integer.parseInt(data[i]);
+			if(max<n){
+				max=n;
+			}else if(min>n){
+				min=n;
+			}
+		}
+		System.out.println("最大値は"+ max + ",最小値は"+min);
 	}
-}
+}	
