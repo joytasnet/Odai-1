@@ -9,5 +9,11 @@
 import java.util.*;
 public class Q005{
 	public static void main(String[] args){
+		System.out.print("整数を入力>>");
+		int input = new Scanner(System.in).nextInt();
+		for(int i=0;i<input;i++){
+			System.out.print((i+1)+" ");
+		}
+		System.out.println("");
 	}
 }

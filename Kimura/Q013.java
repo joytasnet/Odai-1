@@ -14,5 +14,30 @@
 import java.util.*;
 public class Q013{
 	public static void main(String[] args){
+		System.out.print("今日の年は？>>");
+		int today_y = new Scanner(System.in).nextInt();
+		System.out.print("今日の月は？>>");
+		int today_m = new Scanner(System.in).nextInt();
+		System.out.print("今日の日は？>>");
+		int today_d = new Scanner(System.in).nextInt();
+		System.out.print("誕生日の年は？>>");
+		int your_y = new Scanner(System.in).nextInt();
+		System.out.print("誕生日の月は？>>");
+		int your_m = new Scanner(System.in).nextInt();
+		System.out.print("誕生日の日は？>>");
+		int your_d = new Scanner(System.in).nextInt();
+		//年齢測定
+		int old = today_y - your_y;
+		if(today_m < your_m){
+			old--;
+		}else if(today_m == your_m){
+			if(today_d < your_d){
+				old--;
+			}
+		}
+		if(old < 0){
+			old = 0;
+		}
+		System.out.printf("あなたの年齢は%d歳です。",old);
 	}
 }

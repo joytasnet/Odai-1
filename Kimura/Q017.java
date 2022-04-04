@@ -16,5 +16,16 @@ char[] data=fruits.toCharArray(); //[a, p, p, l, e]
 import java.util.*;
 public class Q017{
 	public static void main(String[] args){
+		System.out.print("文字列>>");
+		String inp = new Scanner(System.in).next();
+		char[] data=inp.toCharArray();
+		boolean isJudge = true;
+		for(int i=0;i<data.length/2;i++){
+			if(data[i] != data[data.length-i-1]){
+				isJudge = false;
+				break;
+			}
+		}
+		System.out.printf("[%s]は回文%s。%n",inp,isJudge?"です":"ではありません");
 	}
 }
