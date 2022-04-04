@@ -10,5 +10,11 @@
 import java.util.*;
 public class Q007{
 	public static void main(String[] args){
+		System.out.print("整数を入力>>");
+		int input = new Scanner(System.in).nextInt();
+		for(int i=2;i<=input;i+=2){
+			System.out.print(i+" ");
+		}
+		System.out.println();
 	}
 }

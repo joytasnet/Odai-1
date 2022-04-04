@@ -14,5 +14,26 @@
 import java.util.*;
 public class Q013{
 	public static void main(String[] args){
+		System.out.print("今年の年は?>>");
+		int year = new Scanner(System.in).nextInt();
+		System.out.print("今年の月は?>>");
+		int month = new Scanner(System.in).nextInt();
+		System.out.print("今年の日は?>>");
+		int day = new Scanner(System.in).nextInt();
+		System.out.print("誕生日の年は?>>");
+		int birthday_year = new Scanner(System.in).nextInt();
+		System.out.print("誕生日の月は?>>");
+		int birthday_month = new Scanner(System.in).nextInt();
+		System.out.print("誕生日の日は?>>");
+		int birthday_day = new Scanner(System.in).nextInt();
+		int age = year - birthday_year;
+		if(month == birthday_month){
+			if(day < birthday_day){
+				age -= 1;
+			}
+		}else if(month < birthday_month){
+			age -= 1;
+		}
+		System.out.printf("あなたの年齢は%dです。%n",age);
 	}
 }

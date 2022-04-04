@@ -10,5 +10,15 @@
 import java.util.*;
 public class Q012{
 	public static void main(String[] args){
+		System.out.print("正の整数を入力>>");
+		int input = new Scanner(System.in).nextInt();
+		for(int i=2;i<=input;i++){
+			if(i%3==0){
+				System.out.print(i + " ");
+			}else if(i%2==0){
+				System.out.print(i + " ");
+			}
+		}
+		System.out.println();
 	}
 }

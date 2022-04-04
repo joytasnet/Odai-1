@@ -13,5 +13,23 @@
 import java.util.*;
 public class Q003{
 	public static void main(String[] args){
+		int around =3;
+		int[] numbers = new int[around];
+		for(int i=0;i<numbers.length;i++){
+			System.out.printf("整数%dを入力>>",i+1);
+			numbers[i] = new Scanner(System.in).nextInt();
+		}
+		for(int i=0;i<numbers.length-1;i++){
+			for(int j=i+1;j<numbers.length;j++){
+				if(numbers[i]<numbers[j]){
+					int temp = numbers[i];
+					numbers[i] = numbers[j];
+					numbers[j] = temp;
+				}
+			}
+		}
+		System.out.printf("最も大きい整数%dと%n",numbers[0]);
+		System.out.printf("最も小さい整数%dの差は%dです。%n",
+			numbers[numbers.length-1],numbers[0] - numbers[numbers.length-1]);
 	}
 }

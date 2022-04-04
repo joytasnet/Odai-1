@@ -8,5 +8,8 @@
 import java.util.*;
 public class Q016{
 	public static void main(String[] args){
+		System.out.print("金額を入力>>");
+		double money = new Scanner(System.in).nextInt();
+		System.out.printf("約%,d円です。%n",Math.round(money/100) * 100);
 	}
 }

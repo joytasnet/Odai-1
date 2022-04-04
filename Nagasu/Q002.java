@@ -10,5 +10,12 @@
 import java.util.*;
 public class Q002{
 	public static void main(String[] args){
+		System.out.print("正の整数を入力してください。＞");
+		int input = new Scanner(System.in).nextInt();
+		int sum = 0;
+		for(int i=1;i<=input;i++){
+			sum +=i;
+		}
+		System.out.printf("1から%dまでの合計は、%dです。%n",input,sum);
 	}
 }
