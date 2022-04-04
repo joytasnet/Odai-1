@@ -24,7 +24,7 @@ public class Q014{
 		System.out.print("■ 受験人数（1～9人）を入力してください:");
 		int n = new Scanner(System.in).nextInt();
 		System.out.println("------------------------------------------------------------");
-		System.out.println(" ■ 採点結果 一覧表");
+		System.out.println("    ■ 採点結果 一覧表");
 		System.out.println("------------------------------------------------------------");
 		for(int i =0;i<n;i++){
 			int score = new Random().nextInt(51);
