@@ -11,5 +11,8 @@
 import java.util.*;
 public class Q015{
 	public static void main(String[] args){
+		System.out.print("正の整数を入力してください>>");
+		String num =new Scanner(System.in).next();
+		System.out.print(num.length()+"桁の整数です");
 	}
 }
