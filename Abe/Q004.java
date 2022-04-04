@@ -10,5 +10,8 @@
 import java.util.*;
 public class Q004{
 	public static void main(String[] args){
+		System.out.print("秒を入力>>");
+		int sec = new Scanner(System.in).nextInt();
+		System.out.printf("%d時間%02d分%02d秒です。%n",sec/3600,(sec%3600)/60,sec%60);	
 	}
 }

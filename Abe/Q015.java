@@ -11,5 +11,11 @@
 import java.util.*;
 public class Q015{
 	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+
+		System.out.print("正の整数>>");
+		int num = new Scanner(System.in).nextInt();
+
+		System.out.println(String.valueOf(num).length() + "桁の整数です");
 	}
 }

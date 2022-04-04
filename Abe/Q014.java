@@ -21,5 +21,46 @@
 import java.util.*;
 public class Q014{
 	public static void main(String[] args){
+Scanner scan = new Scanner(System.in);
+		Random rand = new Random();
+
+		System.out.print("■受験人数（1～9人）を入力してください：");
+		int nCandidates = new Scanner(System.in).nextInt();
+
+		for(int i = 0; i < 60; i++)
+			System.out.print("-");
+		System.out.println();
+		System.out.println("\t\t■採点結果 一覧表");
+		for(int i = 0; i < 60; i++)
+			System.out.print("-");
+		System.out.println();
+		for(int i = 0; i < nCandidates; i++) {
+			System.out.print(" 受験者" + (i + 1) + " |");
+			int nPoints = rand.nextInt(51);
+			String points = "";
+			for(int j = 0; j < nPoints; j++) {
+				if((j + 1) % 10 == 0) points += "+";
+				else points += "*";
+			}
+			System.out.println(points + " " + nPoints + "点");
+		}
+		for(int i = 0; i < 60; i++) {
+			if((i + 1) == 10) 
+				System.out.print("|");
+			else if((i + 1) % 10 == 0)
+				System.out.print("+");
+			else
+				System.out.print("-");
+		}
+		System.out.println();
+		for(int i = 0; i < 6; i++) {
+			System.out.print("        ");
+			if(i == 0)
+				System.out.print(" 0");
+			else
+				System.out.print((i * 10) + "");
+		}
+		System.out.println();
 	}
+
 }
