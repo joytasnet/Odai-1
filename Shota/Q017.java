@@ -19,19 +19,17 @@ public class Q017{
 		System.out.print("文字列>>");
 		String words=new Scanner(System.in).nextLine();
 
-		char[] data=words.toCharArray();
-		char[] data2=words.toCharArray();
-		for(int i=data2.length-1;i>=0;i--){
-		}
-		char[] data3=data2[i];
-		if(words.length()%2!=0){
-			if(data==data3){
-				System.out.println(data.charAt()+"は回文です。");
+		boolean isPalindrome=true;
+		char[] data= words.toCharArray();
+		for(int i=0; i<=data.length/2;i++){
+			if(data[i]==data[data.length-1-i]){
+				isPalindrome=true;
 			}else{
-				System.out.println(data.charAt()+"は回文ではありません");
+				isPalindrome=false;
 			}
-		}else{			
-			System.out.println(words.charAt()+"は回文ではありません");
+		}
+		System.out.printf("%sは回文",words);
+		System.out.println(isPalindrome==true?"です。":"ではありません。");
 		}
 	}
 }

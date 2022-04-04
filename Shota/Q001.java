@@ -17,8 +17,9 @@ public class Q001{
 		int numberA=new Scanner(System.in).nextInt();
 		System.out.print("整数>>");
 		int numberB=new Scanner(System.in).nextInt();
-
-		System.out.printf("%dと%dの合計は(%d+%d)です",numberA,numberB);
+		
+		int numberC=numberA+numberB;
+		System.out.printf("%dと%dの合計は%dです%n",numberA,numberB,numberC);
 	
 
 	}
