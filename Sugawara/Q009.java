@@ -12,5 +12,30 @@
 import java.util.*;
 public class Q009{
 	public static void main(String[] args){
+		System.out.print("整数1を入力>>");
+		int num1 = new Scanner(System.in).nextInt();
+		System.out.print("整数2を入力>>");
+		int num2 = new Scanner(System.in).nextInt();
+
+		String[] str = {"偶数","奇数"};
+		System.out.print("偶数(0)・奇数(1)を選択>>");
+		int chois = new Scanner(System.in).nextInt();
+
+		int[] nums = new int[Math.max(num1,num2)-Math.min(num1,num2)+1];
+		int[] sums = new int[2];
+
+		for(int i=0 ; i<nums.length ; i++){
+			nums[i] = Math.min(num1,num2)+i;
+			if(chois==0){
+				if(nums[i]%2==0){
+					sums[chois] += nums[i];
+				}
+			}else{
+				if(nums[i]%2!=0){
+					sums[chois] += nums[i];
+				}
+			}
+		}
+		System.out.printf("%dから%dまでの%sの合計は%dです。%n",Math.min(num1,num2),Math.max(num1,num2),str[chois],sums[chois]);
 	}
 }
