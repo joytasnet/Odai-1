@@ -12,5 +12,16 @@ Paul
 import java.util.*;
 public class Q020{
 	public static void main(String[] args){
+		System.out.print("名前をカンマ区切りで入力>>");
+		String namesA=new Scanner(System.in).nextLine();
+
+		String[] namesB= namesA.split(",");
+
+
+		for(int i=0; i<namesB.length;i++){
+		int wordCount=Integer.parseInt(namesB[i]);
+		}
+
+		System.out.println(namesC);
 	}
 }
