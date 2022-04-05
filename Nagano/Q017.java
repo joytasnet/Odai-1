@@ -19,7 +19,6 @@ public class Q017{
 		System.out.print("文字列を入力>");
 		String word =new Scanner(System.in).next();
 		char[] data=word.toCharArray();
-		char[] compare=word.toCharArray();
 		for(char i=0;i<data.length/2;i++){
 			char tmp = data[i];
 			data[i] = data[data.length-1-i];
