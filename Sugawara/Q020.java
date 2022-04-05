@@ -12,12 +12,28 @@ Paul
 import java.util.*;
 public class Q020{
 	public static void main(String[] args){
-		System.out.println("名前を,区切りで入力>>");
+		System.out.print("名前を,区切りで入力>>");
 		String name = new Scanner(System.in).nextLine();
 
 		String[] names = name.split(",");
+		int[] nameInt = new int[names.length];
+
 		for(int i=0 ; i<names.length ; i++){
-			if(names.length()
+			nameInt[i] = names[i].length();
+		}//これで名前の文字数がnameIntに格納される
+		/*System.out.println(Arrays.toString(nameInt));
+		System.out.println(Arrays.toString(names));*/
+
+		for(int i=0 ; i<names.length ; i++){
+			for(int j=i+1 ; j<names.length ; j++){
+				if(names[i].length() < names[j].length()){
+					String temp = names[j];
+					names[j] = names[i];
+					names[i] =temp;
+				}
+			}
+			System.out.print(names[i]);
+			System.out.println();
 		}
 	}
 }

@@ -22,11 +22,12 @@ public class Q017{
 		char[] strs = str.toCharArray();
 		int checker =0;
 
-		for(int i=0 ; i<=strs.length/2 ; i++){
-			if(strs[i] == strs[strs.length-i]){
-				checker+=1;
+		for(int i=0 ; i<strs.length/2 ; i++){
+//i<=strs.length/2 イコールを入れてしまうと、5文字÷2＝2(0,1,2)の3回になってしまう
+			if(strs[i] == strs[strs.length-1-i]){
+				checker++;
 			}
 		}
-			System.out.println(checker==strs.length/2 ? Arrays.toString(strs)+"は回文書です。" : Arrays.toString(strs)+"は回文書ではありません。");
+			System.out.println((checker==strs.length/2) ? (str+"は回文です。") : (str+"は回文ではありません。"));
 	}
 }

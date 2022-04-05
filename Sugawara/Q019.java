@@ -14,12 +14,12 @@ public class Q019{
 
 		String[] nums = nStr.split(",");
 		int[] numbers = new int[nums.length];
-		System.out.println(Arrays.toString(numbers));
+		//System.out.println(Arrays.toString(numbers));
 
 		for(int i=0 ; i<numbers.length ; i++){
 			numbers[i] = Integer.parseInt(nums[i]);
 		}
-		System.out.println(Arrays.toString(numbers));
+		//System.out.println(Arrays.toString(numbers));
 
 		for(int i=0 ; i<numbers.length-1 ; i++){
 			for(int j=i+1 ; j<numbers.length ; j++){
@@ -28,9 +28,9 @@ public class Q019{
 					numbers[j] = numbers[i];
 					numbers[i] = temp;
 				}
-			}//sort
+			}//↑sort
 		}
-		System.out.println(Arrays.toString(numbers));
-		System.out.printf("最大値は%d,最小値は%d%n",numbers[numbers.length],numbers[0]);
+		//System.out.println(Arrays.toString(numbers));
+		System.out.printf("最大値は%d,最小値は%d%n",numbers[numbers.length-1],numbers[0]);
 	}
 }
