@@ -14,15 +14,17 @@ public class Q021{
 			nums[i] = new Random().nextInt(21) + 20;
 
 		System.out.print("[" + nums[0]);
-		for(int i = 1; i < nums.length; i++)
+		for(int i = 1; i < nums.length; i++){
 			System.out.print("," + nums[i]);
+		}
 		System.out.println("]");
 
 		for(int i = 0; i < nums.length - 1; i++) {
 			int maxInx = i;
-			for(int j = i + 1; j < nums.length; j++)
+			for(int j = i + 1; j < nums.length; j++){
 				if(nums[j] > nums[maxInx])
 					maxInx = j;
+			}
 			int tmp = nums[maxInx];
 			nums[maxInx] = nums[i];
 			nums[i] = tmp;
