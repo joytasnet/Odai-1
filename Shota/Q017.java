@@ -20,14 +20,19 @@ public class Q017{
 		String words=new Scanner(System.in).nextLine();
 
 		char[] data= words.toCharArray();
-		String arrays=" ";
-		for(int i=0; i<=data.length;i++){
-			arrays+=data[data.length-1-i];
-		}
-		if(words .equals(arrays)){
-			System.out.printf("[%s]は回文です。%n",words);
+		boolean isArray=true;
+		for(int i=0; i<=data.length/2;i++){
+			if(data[i]==data[data.length-1-i]){
+				isArray=true;
+			}else{
+				isArray=false;
+				break;
+			}
+		}	
+		if(isArray==true){
+			System.out.println(words+"は回文です.");
 		}else{
-			System.out.printf("[%s]は回文ではありません%n",words);
+			System.out.println(words+"は回文ではありません.");
 		}
 	}
 }
