@@ -21,5 +21,32 @@
 import java.util.*;
 public class Q014{
 	public static void main(String[] args){
+		System.out.print("■ 受験人数（1～9人）を入力してください：");
+		int n = new Scanner(System.in).nextInt();
+		/*
+		int[] svores = new int[n];
+		for(int i=0;i<n;i++){
+			scores[i] = new Random().nextInt(51);
+		}
+		*/
+		System.out.println("------------------------------------------------------------");
+		System.out.println("		■ 採点結果 一覧表");
+		System.out.println("------------------------------------------------------------");
+		for(int i=0;i<n;i++){
+			System.out.print(" 受験者"+(i+1)+" ");
+			int score = new Random().nextInt(51);
+			for(int j=0;j<=score;j++){
+				if(j==0){
+					System.out.print("|");
+				}else if(j%10==0){
+					System.out.print("+");
+				}else{
+					System.out.print("*");
+				}
+			}
+			System.out.printf(" %d点%n",score);
+		}
+		System.out.println("---------|---------+---------+---------+---------+---------+");
+		System.out.println("         0        10        20        30        40        50");
 	}
 }

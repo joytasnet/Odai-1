@@ -13,5 +13,27 @@
 import java.util.*;
 public class Q003{
 	public static void main(String[] args){
+		System.out.print("整数1を入力>>");
+		int n1 = new Scanner(System.in).nextInt();
+		System.out.print("整数2を入力>>");
+		int n2 = new Scanner(System.in).nextInt();
+		System.out.print("整数3を入力>>");
+		int n3 = new Scanner(System.in).nextInt();
+		int max = n1;
+		int min = n1;
+		if(max < n2){
+			max = n2;
+		}
+		if(max < n3){
+			max = n3;
+		}
+		if(min > n2){
+			min = n2;
+		}
+		if(max > n3){
+			min = n3;
+		}
+		System.out.printf("最も大きい整数%dと%n",max);
+		System.out.printf("最も小さい整数%dの差は%dです。%n",min,max-min);
 	}
 }

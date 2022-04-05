@@ -16,5 +16,17 @@
 import java.util.*;
 public class Q010{
 	public static void main(String[] args){
+		int n=0;
+		int sum=0;
+		for(int i=1;;i++){
+			System.out.printf("整数%dを入力>>",i);
+		  int ni = new Scanner(System.in).nextInt();
+			if(ni==0){
+				break;
+			}
+			n=i;
+			sum+=ni;
+		}
+		System.out.printf("合計は%d,平均は%dです。",sum,sum/n);
 	}
 }
