@@ -16,21 +16,22 @@ public class Q003{
 		final int n =3;
 		int[] nums = new int [n];
 
-		int total =0;
 		int min =0;
 		int max =0;
 
 		for(int i=0 ; i<n ; i++){
 			System.out.printf("整数(%d)を入力>>",i+1);
 			nums[i] = new Scanner(System.in).nextInt();
-			min = nums[0];
+/*			min = nums[0];
 			if(nums[i]>max){
 				max = nums[i];
 			}
 			if(nums[i]<min){
 				min = nums[i];
-			}
+			}*/
 		}
+		max=Math.max(nums[0],Math.max(nums[1],nums[2]));
+		min=Math.min(nums[0],Math.min(nums[1],nums[2]));
 		System.out.printf("最も大きかった整数%dと%n最も小さかった整数%dの差は%dです%n",max,min,max-min);
 	}
 }

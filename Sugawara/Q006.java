@@ -22,19 +22,22 @@ public class Q006{
 		int start = new Scanner(System.in).nextInt();
 		System.out.print("末尾の整数を入力>>");
 		int end = new Scanner(System.in).nextInt();
-		int sum = Math.max(start,end) - Math.min(start,end)+1;
+		int max = Math.max(start,end);
+		int min = Math.min(start,end);
+		int sum = max-min+1;
 		if(sum<0){
 			sum*=(-1);
+		}else{
 		}
 
 		int[] numbers = new int[sum];
 		if(end<0){
 			for(int i=0 ; i<numbers.length ; i++){
-				numbers[i]=start-i;
+				numbers[i]=max-i;
 			}
 		}else{
 			for(int i=0 ; i<numbers.length ; i++){
-				numbers[i]=start+i;
+				numbers[i]=min+i;
 			}
 		}
 		System.out.println(Arrays.toString(numbers));
