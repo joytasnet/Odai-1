@@ -16,5 +16,22 @@ char[] data=fruits.toCharArray(); //[a, p, p, l, e]
 import java.util.*;
 public class Q017{
 	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+
+		System.out.print("文字列>>");
+		String str = new Scanner(System.in).nextLine();
+
+		char[] arr = str.toCharArray();
+		boolean isPalindrome = true;
+		for(int i = 0; i < arr.length / 2; i++)
+			if(arr[i] != arr[arr.length - i - 1]) {
+				isPalindrome = false;
+				break;
+			}
+		
+		if(isPalindrome)
+			System.out.println("[" + str + "]は回文です。");
+		else
+			System.out.println("[" + str + "]は回文ではありません。");
 	}
 }

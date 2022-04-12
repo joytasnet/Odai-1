@@ -12,5 +12,12 @@
 import java.util.*;
 public class Q018{
 	public static void main(String[] args){
+		System.out.print("スカイツリーの高さは(m)?>>");
+		int height = new Scanner(System.in).nextInt();
+		if(height == 634){
+			System.out.println("あたり");
+		}else{
+			System.out.println("はずれ、正解は634m");
+		}
 	}
 }

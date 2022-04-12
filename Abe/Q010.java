@@ -16,5 +16,19 @@
 import java.util.*;
 public class Q010{
 	public static void main(String[] args){
+		int sum = 0;
+		int nInputs = 0;
+		int num;
+
+		while(true) {
+			System.out.print("整数の" + (nInputs + 1) + "を入力>>");
+			num = new Scanner(System.in).nextInt();
+			if(num == 0) {
+				break;
+			}
+			sum += num;
+			nInputs++;
+		}
+		System.out.println("合計は" + sum + ",平均は" + (sum / nInputs) + "です。");
 	}
 }
