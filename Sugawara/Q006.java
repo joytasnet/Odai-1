@@ -18,28 +18,16 @@
 import java.util.*;
 public class Q006{
 	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
 		System.out.print("先頭の整数を入力>>");
-		int start = new Scanner(System.in).nextInt();
+		int start = scan.nextInt();
 		System.out.print("末尾の整数を入力>>");
-		int end = new Scanner(System.in).nextInt();
-		int max = Math.max(start,end);
-		int min = Math.min(start,end);
-		int sum = max-min+1;
-		if(sum<0){
-			sum*=(-1);
-		}else{
-		}
+		int end = scan.nextInt();
+		int n = Math.abs(start-end)+1;
 
-		int[] numbers = new int[sum];
-		if(end<0){
-			for(int i=0 ; i<numbers.length ; i++){
-				numbers[i]=max-i;
-			}
-		}else{
-			for(int i=0 ; i<numbers.length ; i++){
-				numbers[i]=min+i;
-			}
+		for(int i=0 ; i<n ; i++){
+			System.out.print(start<end ? start++ : start--);
 		}
-		System.out.println(Arrays.toString(numbers));
+		System.out.println();
 	}
 }
